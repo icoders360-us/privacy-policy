@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Privacy Policy — Einbürgerungstest</title>
+<title>Privacy Policy — Einbürgerungstest AI</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
@@ -17,7 +17,7 @@
 <h1>Privacy Policy</h1>
 <p class="updated">Last updated: September 2026</p>
 
-<p>This Privacy Policy describes how the <strong>Einbürgerungstest</strong> app ("the App"), published by icoders360 ("we", "us"), handles information when you use the App.</p>
+<p>This Privacy Policy describes how the <strong>Einbürgerungstest AI</strong> app ("the App"), published by icoders360 ("we", "us"), handles information when you use the App. The App may be listed on the App Store under a name that includes the current year (e.g. "Einbürgerungstest AI: 2026") — this Policy applies regardless of that year suffix.</p>
 
 <h2>Summary</h2>
 <p>The App is a study tool for the German naturalization ("Einbürgerungstest") exam. It does not require an account or login. Your quiz progress, bookmarks, and settings are stored only on your device and are never uploaded to us. We use Firebase to understand app usage and to catch crashes, described below.</p>
@@ -42,6 +42,15 @@
 <h3>Notifications</h3>
 <p>If you enable notifications, the App schedules local reminders on your device (e.g. to encourage practice). These are generated and delivered entirely on-device and are not based on any data we collect.</p>
 
+<h3>"Explain More" AI chat</h3>
+<p>The App includes an optional "Explain More" feature that lets you ask follow-up questions about a specific exam question and get an AI-generated explanation. This feature is only used if you tap the chat button and type a message yourself — it is never automatic.</p>
+<p>Depending on your device and your selection in the chat, this feature is powered by one of two sources:</p>
+<ul>
+  <li><strong>On-device (Apple Intelligence):</strong> On supported devices (iOS 26 and later, with Apple Intelligence enabled), your question and the chat conversation are processed entirely on your device using Apple's Foundation Models framework. Nothing is sent to us, Apple, or any other server.</li>
+  <li><strong>Cloud (Google Gemini):</strong> On devices that don't support the on-device option, or if you choose Gemini from the chat's model picker, your conversation — the exam question being discussed, its answer/explanation, and whatever you type — is sent to Google's Gemini API (via Firebase AI Logic) for processing. This request is verified as coming from a genuine copy of the App using Firebase App Check (Apple's on-device App Attest), which does not itself collect any personal information about you.</li>
+</ul>
+<p>Chat conversations are not linked to your identity — the App has no accounts or logins — and are not saved by the App once you close the chat; each conversation starts fresh. When Gemini is used, your message content is processed by Google according to Google's own applicable terms, in order to generate a response back to the App.</p>
+
 <h2>Advertising</h2>
 <p>The App does not currently display advertising. <strong>If we introduce advertising in a future update</strong>, this policy will be updated in advance to describe the ad network used, what data it collects (which may include your Advertising Identifier for ad personalization), and you will be asked for consent via Apple's App Tracking Transparency prompt and, where applicable, a cookie/consent banner for users in the EU/EEA, before any such tracking begins.</p>
 
@@ -49,7 +58,7 @@
 <p>The App is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
 
 <h2>Data Sharing</h2>
-<p>We do not sell your data. The only third-party services used are Google's Firebase Analytics and Crashlytics, described above, which process data on our behalf under their own privacy terms.</p>
+<p>We do not sell your data. The third-party services used are Google's Firebase Analytics and Crashlytics, described above, and — only when you use the "Explain More" chat with the Gemini option — Google's Gemini API (via Firebase AI Logic), described above. Each processes data on our behalf, or on Google's own behalf for Gemini requests, under their own respective privacy terms.</p>
 
 <h2>Your Choices</h2>
 <p>You can disable notifications at any time in the App's settings or in iOS Settings. Analytics and crash data collection is standard for the App's operation; if you have concerns, you may stop using the App.</p>
@@ -58,7 +67,7 @@
 <p>We may update this Privacy Policy from time to time. Material changes (such as the introduction of advertising) will be reflected here with an updated "Last updated" date.</p>
 
 <h2>Contact Us</h2>
-<p>If you have questions about this Privacy Policy, contact us at: <strong>[ADD CONTACT EMAIL HERE]</strong></p>
+<p>If you have questions about this Privacy Policy, contact us at: <strong>icoders360.feedback@gmail.com</strong></p>
 
 </body>
 </html>
